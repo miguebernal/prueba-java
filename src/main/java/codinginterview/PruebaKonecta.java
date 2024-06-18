@@ -18,8 +18,6 @@ public class PruebaKonecta {
         System.out.println(getProximaFechaQuincena("2024-07-15"));
     }
 
-    // Validaciones para la fecha
-    // Si fecha es menos a 15 retornar 15 o día hábil
     private static String getProximaFechaQuincena(String fechaStr) {
         int dia = Integer.parseInt(fechaStr.substring(fechaStr.length()-2, fechaStr.length()));
         if(dia <= 15) {
